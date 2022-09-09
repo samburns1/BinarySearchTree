@@ -1,4 +1,5 @@
 public class Node {
+    // simple
     private Node parent;
     private Node lchild;
     private Node rchild;
@@ -34,6 +35,8 @@ public class Node {
     public Node getParent(){
         return parent;
     }
+
+    
 
 
 }

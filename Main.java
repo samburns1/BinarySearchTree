@@ -1,4 +1,5 @@
 public class Main{
+    // simple
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
@@ -16,9 +17,12 @@ public class Main{
         if(testSearchne()) pass++;
         else fail++;
 
-        if(testSearchte()) pass++;
+
+
+        if(testSearchSevenElements()) pass+=10;
         else fail++;
-        
+
+
         if(testDelete1()) pass++;
         else fail++;
 
@@ -62,13 +66,24 @@ public class Main{
         return fl.search(3) == fe;
     }
 
-    public static boolean testSearchte(){
+    public static boolean testSearchSevenElements(){
         BinaryTree fl = new BinaryTree();
-        Node fe = new Node(3);
-        Node se = new Node(4);
+        Node fe = new Node(5);
+        Node se = new Node(2);
+        Node te = new Node(1);
+        Node we = new Node(3);
+        Node xe = new Node(7);
+        Node ze = new Node(8);
+        Node ye  = new Node(6);
         fl.insert(fe);
         fl.insert(se);
-        return fl.search(3) == fe;
+        fl.insert(te);
+        fl.insert(we);
+        fl.insert(xe);
+        fl.insert(ze);
+        fl.insert(ye);
+
+        return fl.search(3) == we;
     }
 
     public static boolean testSearch(){
